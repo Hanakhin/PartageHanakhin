@@ -85,13 +85,9 @@ export function DropDownMenu() {
                     <DropDownItem
                         goToMenu='main'>
                         Return</DropDownItem>
-
-                    <DropDownItem>My profile</DropDownItem>
-                    <DropDownItem>Contact</DropDownItem>
                     <DropDownItem>Contact</DropDownItem>
                     <DropDownItem>Help</DropDownItem>
                     <DropDownItem>Library</DropDownItem>
-                    <DropDownItem>Settings</DropDownItem>
                 </div>
             </CSSTransition>
         </div>
