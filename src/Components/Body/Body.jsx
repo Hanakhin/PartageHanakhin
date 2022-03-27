@@ -7,7 +7,9 @@ class Body extends React.Component {
     render() {
         return (
                 <section className="Body">
-                    
+                   
+
+
                 </section>
         )
     }
