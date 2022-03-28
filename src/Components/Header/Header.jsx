@@ -17,8 +17,12 @@ class Header extends React.Component {
 
                 </Nav>
 
+            <h1 className="title">Choose your Shoes</h1>
 
+            <div className="Gallery">
 
+                
+            </div>
 
             </section>
         )
