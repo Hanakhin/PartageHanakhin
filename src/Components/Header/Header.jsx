@@ -3,6 +3,7 @@ import Css from './Header.css';
 import Nav from "./Nav-Bar/NavBar";
 import { Navitem } from "./Nav-Bar/NavBar";
 import { DropDownMenu } from "./Nav-Bar/NavBar";
+import { DisplayCards } from "./Card/Card";
 
 class Header extends React.Component {
 
@@ -11,18 +12,22 @@ class Header extends React.Component {
             <section className="Header">
                 <Nav>
 
+
                     <Navitem icon="❌" >
                         <DropDownMenu />
                     </Navitem>
 
                 </Nav>
 
-            <h1 className="title">Choose your Shoes</h1>
+                <section className="Gallery">
 
-            <div className="Gallery">
+                <DisplayCards/>
 
-                
-            </div>
+                </section>
+
+                <h1 className="title">Choose your Shoes</h1>
+
+
 
             </section>
         )

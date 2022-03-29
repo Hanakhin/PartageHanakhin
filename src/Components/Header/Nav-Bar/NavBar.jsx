@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Css from "./navbar.css";
 import { CSSTransition } from 'react-transition-group';
-import Arrow from './icons/X.png';
+
+//<img src={process.env.PUBLIC_URL+"assets/imgs/icons/X.png"}/>
 
 function Nav(props) {
     return (
@@ -22,7 +23,8 @@ export function Navitem(props) {
 
 
         <li className="nav-item">
-            <a href="#" className="icon-button" onClick={() => setOpen(!open)}>{props.icon} </a>
+            
+            <a href="#" className="icon-button"  onClick={() => setOpen(!open)}>{props.icon} </a>
 
             {open && props.children}
         </li>
@@ -62,7 +64,7 @@ export function DropDownMenu() {
             >
 
                 <div className="menu">
-                    <DropDownItem  >My profile </DropDownItem>
+                    <DropDownItem  >My profile</DropDownItem>
 
                     <DropDownItem
                         goToMenu='settings'>
@@ -82,12 +84,13 @@ export function DropDownMenu() {
             >
 
                 <div className='menu'>
+                    <DropDownItem>Sign in</DropDownItem>
+                    <DropDownItem>Sign up</DropDownItem>
+                    <DropDownItem>Contact us</DropDownItem>
+                    <DropDownItem>Need help ?</DropDownItem>
                     <DropDownItem
                         goToMenu='main'>
-                        Return</DropDownItem>
-                    <DropDownItem>Contact</DropDownItem>
-                    <DropDownItem>Help</DropDownItem>
-                    <DropDownItem>Library</DropDownItem>
+                        Back</DropDownItem>
                 </div>
             </CSSTransition>
         </div>

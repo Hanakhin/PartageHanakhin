@@ -1,0 +1,41 @@
+.Gallery {
+    display: flex;
+    justify-content: center;
+    .Card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:20px ;
+        .boutton{
+            display: flex;
+            justify-content: space-evenly;
+            width:100vw;
+            margin-top: 30px;
+            flex-wrap: nowrap;
+        }
+        button {
+            border: none;
+            background-color: var(--bg);
+            color: white;
+            transition: .5s;
+            border-radius: 3px;
+            font-size:1.5vmax;
+            &:hover{
+                transition: .5s;
+                filter: brightness(1.2);
+                 color: red;   
+            }
+        }
+        img {
+            width: 400px;
+            border-radius: 20px;
+            transition: 0.5s;
+            &:hover {
+                filter: brightness(1.2);
+                transition: 0.5s;
+                transform: scale(105%);
+            }
+        }
+    }
+}
