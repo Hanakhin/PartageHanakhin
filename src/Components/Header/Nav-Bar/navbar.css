@@ -2,7 +2,10 @@
     height: var(--nav-size);
     background-color: var(--bg);
     padding: 0 1rem;
-    border-bottom: var(--border)
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+
 }
 
 .navbar .navbar-nav {
@@ -51,6 +54,7 @@
 }
 
 .menu-item {
+    color:#f71a40;
     height: 50px;
     display: flex;
     align-items: center;

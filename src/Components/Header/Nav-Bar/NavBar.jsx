@@ -9,8 +9,9 @@ function Nav(props) {
 
         <nav className="navbar" >
 
-            <ul className="navbar-nav"> {props.children}</ul>
-
+            <ul className="navbar-nav"> 
+            {props.children}</ul>
+            
         </nav>
     );
 }

@@ -3,7 +3,6 @@ import Css from './Header.css';
 import Nav from "./Nav-Bar/NavBar";
 import { Navitem } from "./Nav-Bar/NavBar";
 import { DropDownMenu } from "./Nav-Bar/NavBar";
-import { DisplayCards } from "./Card/Card";
 
 class Header extends React.Component {
 
@@ -15,17 +14,19 @@ class Header extends React.Component {
 
                     <Navitem icon="❌" >
                         <DropDownMenu />
+
                     </Navitem>
 
                 </Nav>
 
-                <section className="Gallery">
-
-                <DisplayCards/>
-
+                <section className="Section1">
+                    <div className="textS1">
+                    <h1 className="title">Shiyaku</h1>
+                        <h3 className="text"> Get your collection now</h3>
+                        </div>
                 </section>
 
-                <h1 className="title">Choose your Shoes</h1>
+
 
 
 

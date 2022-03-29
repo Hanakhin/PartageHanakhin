@@ -1,15 +1,28 @@
-.Header{
-    height: 400px;
+.Header {
+    width: 100vw;
+    height: fit-content;
 }
+.Section1 {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .textS1{
+        width: fit-content;
+        text-align: left;
+    }
+    .title {
+        color: var(--bg);
+        font-size: 3vmax;
+        letter-spacing: 22px;
+    }
+    .text{
+        color:var(--bg);
+        font-size:2vmax;
+
+    }
 
 
-.title{
-        color: white;
-        font-size: 4vmax;     
-}
-
-.Gallery{
-
-    height:400px;
-    
 }

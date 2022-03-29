@@ -1,1 +1,1 @@
-.Header{height:400px}.title{color:#fff;font-size:4vmax}.Gallery{height:400px}
+.Header{width:100vw;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.Section1{height:200px;display:flex;flex-wrap:wrap;flex-direction:column;justify-content:center;align-items:center}.Section1 .textS1{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;text-align:left}.Section1 .title{color:var(--bg);font-size:3vmax;letter-spacing:22px}.Section1 .text{color:var(--bg);font-size:2vmax}
