@@ -6,16 +6,20 @@ import guardian from '../Card/guardian.jpg';
 
 export function DisplayCards() {
 
-    let [image, setImage] = useState(justice);
+   // let [image, setImage] = useState(justice);
+
+    const image = [guardian,justice,spider];
+
+    const [index, setIndex] = useState(0);
 
     return (
         <div className="Card">
 
-            <img src={image} />
+            <img src={image[index]} />
             <div className="boutton">
-                <button onClick={() => (setImage(image = spider))}>Spider-Man</button>
-                <button onClick={() => (setImage(image = justice))}>Justice League</button>
-                <button onClick={() => (setImage(image = guardian))}>Les guardiens de la galaxie</button>
+                <button onClick={() => setIndex(Math.max(index-1,0))}>Image Précédente</button>
+                <button onClick={() => setIndex(Math.min(index+1,image.length-1))}>Image Suivante</button>
+                
             </div>
         </div>
     )
