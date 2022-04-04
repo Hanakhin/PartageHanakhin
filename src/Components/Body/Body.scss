@@ -1,16 +1,27 @@
-.Body{
-    margin-top:250px;
+.Body {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    div {
+        margin-top: 80%;
+
+    }
 }
 
-.Content{
-    display:flex;
-    flex-wrap: wrap;
-    height:300px;
+.Content {
+    display: flex;
+    height: 150px;
     background-color: var(--bg);
     box-shadow: 0 2px 5px black;
-    .title_content{
-        color:#f71a40;
-        font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    border-radius: 5px;
+
+    .title_content {
+        color: #00fa9a;
+        font-weight: 600;
         font-size: 2vmax;
+        letter-spacing: 3px;
     }
 }

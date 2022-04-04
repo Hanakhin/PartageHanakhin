@@ -6,14 +6,20 @@ class Body extends React.Component {
 
     render() {
         return (
-                <section className="Body">
-                    <div className="Content">
-                        <h1 className="title_content">Qu'est ce que Shiyaku ?</h1>
+            <section className="Body">
 
-                    </div>
+                <div className="Content">
+                    <h1 className="title_content">What is Shiyaku ?</h1>
 
+                </div>
+                <div className="Content">
+                    <h1 className="title_content">How to get yours ?</h1>
+                </div>
 
-                </section>
+                <div className="Content">
+                    <h1 className="title_content">Join the future of NFTs</h1>
+                </div>
+            </section>
         )
     }
 }

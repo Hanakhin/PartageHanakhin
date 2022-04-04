@@ -9,9 +9,9 @@ function Nav(props) {
 
         <nav className="navbar" >
 
-            <ul className="navbar-nav"> 
-            {props.children}</ul>
-            
+            <ul className="navbar-nav">
+                {props.children}</ul>
+
         </nav>
     );
 }
@@ -24,8 +24,8 @@ export function Navitem(props) {
 
 
         <li className="nav-item">
-            
-            <a href="#" className="icon-button"  onClick={() => setOpen(!open)}>{props.icon} </a>
+
+            <a href="#" className="icon-button" onClick={() => setOpen(!open)}>{props.icon} </a>
 
             {open && props.children}
         </li>

@@ -21,11 +21,25 @@ class Header extends React.Component {
 
                 <section className="Section1">
                     <div className="textS1">
-                    <h1 className="title">Shiyaku</h1>
-                        <h3 className="text"> Get your collection now</h3>
-                        </div>
+                        <h1 className="title">Shiyaku</h1>
+                        <h3 className="text"> The future of Nfts</h3>
+                    </div>
+                    <nav className="socials">
+                        <ul>
+                            <a href="#">Twitter</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Instagram</a>
+                        </ul>
+                    </nav>
                 </section>
-
+                <section className="Pre_Content">
+                    <div id="card1">
+                    </div>
+                    <div id="card2"></div>
+                    <div id="card3"></div>
+                    <div id="card4"></div>
+                    <div id="card5"></div>
+                </section>
 
 
 
