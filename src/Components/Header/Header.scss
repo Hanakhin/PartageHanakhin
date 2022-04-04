@@ -1,6 +1,7 @@
 .Header {
     width: 100vw;
     height: fit-content;
+
     .Pre_Content {
         height: 600px;
         background-color: var(--bg);
@@ -55,24 +56,28 @@
         grid-template-columns: repeat(2, auto);
         place-items: center;
         background-color: var(--bg-accent);
-        .socials{
+
+        .socials {
             width: fit-content;
             height: fit-content;
             grid-column: 1;
-            
-            a{
-                padding:20px;
+
+            a {
+                padding: 20px;
                 transition: 0.3s ease-out;
                 font-size: 1vmax;
                 border-radius: 5px;
-                &:hover{
-                    color:var(--green);
+
+                &:hover {
+                    color: var(--green);
                 }
-                @media(max-width:1024px){
-                    font-size:1vmax
+
+                @media(max-width:1024px) {
+                    font-size: 1vmax
                 }
             }
         }
+
         .textS1 {
             width: fit-content;
             text-align: left;
