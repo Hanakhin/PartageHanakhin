@@ -59,15 +59,17 @@
             width: fit-content;
             height: fit-content;
             grid-column: 1;
-            @media(max-width:1024){
-                grid-template-columns: none;
-            }
+            
             a{
-                padding:10px;
+                padding:20px;
                 transition: 0.3s ease-out;
                 font-size: 1vmax;
+                border-radius: 5px;
                 &:hover{
                     color:var(--green);
+                }
+                @media(max-width:1024px){
+                    font-size:1vmax
                 }
             }
         }
