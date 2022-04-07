@@ -1,14 +1,21 @@
 import React from "react";
 import Css from './Header.css';
-import Nav from "./Nav-Bar/NavBar";
-import { Navitem } from "./Nav-Bar/NavBar";
-import { DropDownMenu } from "./Nav-Bar/NavBar";
+import Nav,{Navitem,DropDownMenu} from "./Nav-Bar/NavBar";
+import twitter from "./icons/twitter.svg";
+import fb from "./icons/fb.svg";
+import instagram from "./icons/insta.svg"
+import achat from "./icons/acheter.svg"
+import vente from "./icons/vendre.svg"
+import explorer from "./icons/explorer.svg"
+import decouvrir from "./icons/decouvrir.svg"
+import innover from "./icons/innover.svg"
 
 class Header extends React.Component {
 
     render() {
         return (
-            <section className="Header">
+            <div className="Header">
+                <section>
                 <Nav>
 
 
@@ -26,25 +33,25 @@ class Header extends React.Component {
                     </div>
                     <nav className="socials">
                         <ul>
-                            <a href="#">Twitter</a>
-                            <a href="#">Facebook</a>
-                            <a href="#">Instagram</a>
+                            <span ><img src={twitter} width="20%" />  <a href="https://twitter.com/" target='_blank'>Twitter</a></span>
+                            <span ><img src={fb} width="20%" />  <a href="https://twitter.com/" target='_blank'>Facebook</a></span>
+                            <span ><img src={instagram} width="20%" />  <a href="https://twitter.com/" target='_blank'>Instagram</a></span>
+
                         </ul>
                     </nav>
                 </section>
                 <section className="Pre_Content">
-                    <div id="card1">
-                    </div>
-                    <div id="card2"></div>
-                    <div id="card3"></div>
-                    <div id="card4"></div>
-                    <div id="card5"></div>
+                    <span><span className="Text_card"><img src={achat} alt="" width="30px" /> <h1>Buy</h1></span> <div id="card1"></div> </span>
+                    <span><span className="Text_card"><img src={vente} alt="" width="30px" /> <h1>Sell</h1></span> <div id="card2"></div></span>
+                    <span><span className="Text_card"><img src={decouvrir} alt="" width="30px" /> <h1>Discover</h1></span> <div id="card3"></div></span>
+                    <span><span className="Text_card"><img src={explorer} alt="" width="30px" /> <h1>Explore</h1></span> <div id="card4"></div></span>
+                    <span><span className="Text_card"><img src={innover} alt="" width="30px" /> <h1>Innovate</h1></span> <div id="card5"></div></span>
                 </section>
 
 
 
-
-            </section>
+                </section>
+            </div>
         )
     }
 }

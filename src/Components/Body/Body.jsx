@@ -6,8 +6,8 @@ class Body extends React.Component {
 
     render() {
         return (
-            <section className="Body">
-
+            <div className="Body">
+                <section>
                 <div className="Content">
                     <h1 className="title_content">What is Shiyaku ?</h1>
 
@@ -19,7 +19,8 @@ class Body extends React.Component {
                 <div className="Content">
                     <h1 className="title_content">Join the future of NFTs</h1>
                 </div>
-            </section>
+                </section>
+            </div>
         )
     }
 }

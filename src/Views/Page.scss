@@ -5,6 +5,7 @@ section {
 * {
     margin: 0;
     cursor: default;
+
 }
 
 body {
@@ -21,7 +22,8 @@ body {
     --border-radius: 8px;
     --speed: 500ms;
     --red: #f71a40;
-    --green:mediumspringgreen;
+    --green: mediumspringgreen;
+    --purple: #E67EFB
 }
 
 
@@ -34,6 +36,7 @@ ul {
 a {
     color: var(--text-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 * {
