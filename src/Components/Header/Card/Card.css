@@ -1,1 +1,64 @@
-.Gallery{display:grid;grid-template-columns:1fr 80% 1fr}.Gallery .Card{grid-column:2;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;place-self:center;margin:50px 0 10px 0}.Gallery .Card img{width:60%;border-radius:20px;transition:.5s}.Gallery .Card img:hover{filter:brightness(1.2);transform:scale(102%);box-shadow:#1b1b1b 3px 3px 5px}.Gallery .Card .boutton{grid-column:2}.Gallery .Card .boutton .icons{width:30px;margin-top:20px}.Gallery .Card button{border:none;background-color:var(--bg);color:#fff;transition:.5s;border-radius:3px;font-size:1.5vmax}.Gallery .Card button:hover{transition:.5s;filter:brightness(1.2);color:red}
+.Gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80% 1fr;
+      grid-template-columns: 1fr 80% 1fr;
+}
+
+.Gallery .Card {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  place-self: center;
+  margin: 50px 0 10px 0;
+}
+
+.Gallery .Card img {
+  width: 60%;
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Gallery .Card img:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
+  -webkit-box-shadow: #1b1b1b 3px 3px 5px;
+          box-shadow: #1b1b1b 3px 3px 5px;
+}
+
+.Gallery .Card .boutton {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.Gallery .Card .boutton .icons {
+  width: 30px;
+  margin-top: 20px;
+}
+
+.Gallery .Card button {
+  border: none;
+  background-color: var(--bg);
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 3px;
+  font-size: 1.5vmax;
+}
+
+.Gallery .Card button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  color: red;
+}
+/*# sourceMappingURL=Card.css.map */

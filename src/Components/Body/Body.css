@@ -1,1 +1,19 @@
-.Body{display:grid;grid-template-columns:repeat(3, auto)}.Body div{margin-top:80%}.Content{display:flex;height:150px;background-color:var(--bg);box-shadow:0 2px 5px #000;align-items:center;justify-content:center;grid-column:2;border-radius:5px}.Content .title_content{color:#00fa9a;font-weight:600;font-size:2vmax;letter-spacing:3px}
+.Body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+}
+
+.bigcard {
+  width: 100%;
+  height: 400px;
+  width: 50%;
+}
+
+.bigcard .picture {
+  background-image: url(../Header/Menu/card.png);
+  height: 100%;
+}
+/*# sourceMappingURL=Body.css.map */

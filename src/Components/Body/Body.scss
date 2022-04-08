@@ -1,27 +1,16 @@
 .Body {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, auto);
 
-    div {
-        margin-top: 80%;
-
-    }
 }
 
-.Content {
-    display: flex;
-    height: 150px;
-    background-color: var(--bg);
-    box-shadow: 0 2px 5px black;
-    align-items: center;
-    justify-content: center;
-    grid-column: 2;
-    border-radius: 5px;
-
-    .title_content {
-        color: #00fa9a;
-        font-weight: 600;
-        font-size: 2vmax;
-        letter-spacing: 3px;
+.bigcard{
+    width:100%;
+    height:400px;
+    width:50%;
+    
+    .picture{
+        background-image: url(../Header/Menu/card.png);
+        height: 100%;
     }
 }

@@ -9,11 +9,13 @@ class Page extends React.Component {
 
     render() {
         return (
-        <section className="Page">
+        <div className="Page">
+            <section>
                     <Header />
                     <Body />
                     <Footer />
-        </section>
+            </section>
+        </div>
         )
     }
 }
